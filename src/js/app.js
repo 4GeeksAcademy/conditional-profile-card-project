@@ -1,27 +1,22 @@
 import "../style/index.css";
 
-/**
- *  EDIT ONLY INSIDE THIS RENDER FUNCTION
- *  This function is called every time the user changes types or changes any input
- * 
-    {
-        includeCover: true, // if includeCover is true the algorithm should show the cover image
-        background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da", // this is the image's url that will be used as a background for the profile cover
-        avatarURL: "https://randomuser.me/api/portraits/women/42.jpg", // this is the url for the profile avatar
-        socialMediaPosition: "right", // social media bar position (left or right)
-        
-        twitter: null, // social media usernames
-        github: null,
-        linkedin: null,
-        instagram: null,
+window.variables = {
+  includeCover: true, // if includeCover is true the algorithm should show the cover image
+  background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da", // this is the image's url that will be used as a background for the profile cover
+  avatarURL: "https://randomuser.me/api/portraits/women/42.jpg", // this is the url for the profile avatar
+  socialMediaPosition: "right", // social media bar position (left or right)
 
-        name: null,
-        lastName: null,
-        role: null,
-        country: null,
-        city: null
-    }
- */
+  twitter: null, // social media usernames
+  github: null,
+  linkedin: null,
+  instagram: null,
+
+  name: null,
+  lastName: null,
+  role: null,
+  country: null,
+  city: null
+};
 function render(variables = {}) {
   console.log("These are the current variables: ", variables); // print on the console
   // here we ask the logical questions to make decisions on how to build the html
